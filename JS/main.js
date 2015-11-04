@@ -29,6 +29,7 @@ var GameRouter = Backbone.Router.extend({
   },
   play: function(){
     $('.gameDisplay').html('');
+    $('.gameDisplay').html(_.template($('#play').html()))
   },
   leaderBoard: function(){
     $('.gameDisplay').html('');
